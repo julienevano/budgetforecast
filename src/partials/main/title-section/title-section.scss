@@ -1,0 +1,9 @@
+section.title-section {
+  color: $color-text;
+  background: $color-primary url('./assets/images/icon.png') center / contain no-repeat;
+  height: 500px;
+
+  h1 {
+    margin-top: 0;
+  }
+}
