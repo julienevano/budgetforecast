@@ -1,6 +1,15 @@
 // Variables
 @import 'theme/variables';
 
+// Theme
+@import 'theme/theme';
+
+// Pages
+@import 'privacy-policy/privacy-policy';
+@import 'terms-conditions/terms-conditions';
+
 // Partials
 @import 'partials/header/header';
 @import 'partials/main/main';
+@import 'partials/footer/footer';
+@import 'partials/components/get-the-app-button/get-the-app-button';

@@ -1,5 +1,37 @@
 main {
+  section.section {
+    padding: 54px;
+    color: $color-text;
+    min-height: 340px;
+    max-height: 510px;
+    overflow: hidden;
 
+    &.section--grey {
+      background-color: $color-light;
+    }
+
+    .section__card-image.mdl-card {
+      background-color: $color-white;
+
+      &.section__card-image--portrait {
+        min-width: 320px;
+        min-height: 400px;
+      }
+
+      &.section__card-image--landscape {
+        min-width: 460px;
+        min-height: 300px;
+      }
+
+      &.section__card-image--right {
+        float: right;
+      }
+    }
+  }
 }
 
-@import 'title-section/title-section'
+@import 'home/home';
+@import 'budget/budget';
+@import 'accrual-balance/accrual-balance';
+@import 'forecast/forecast';
+@import 'income-expense/income-expense';

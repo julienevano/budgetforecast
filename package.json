@@ -1,7 +1,7 @@
 {
-  "name": "budget-forecast-website",
+  "name": "budgetforecast-website",
   "version": "1.0.0",
-  "description": "Budget Forecast's website",
+  "description": "Website | Budget Forecast",
   "private": true,
   "author": "Julien Evano",
   "license": "UNLICENSED",

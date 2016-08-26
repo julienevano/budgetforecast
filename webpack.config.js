@@ -48,6 +48,26 @@ module.exports = {
         removeComments: true
       }
     }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src/privacy-policy/index.handlebars'),
+      filename: 'privacy-policy/index.html',
+      minify: {
+        collapseWhitespace: true,
+        html5: true,
+        minifyCSS: true,
+        removeComments: true
+      }
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src/terms-conditions/index.handlebars'),
+      filename: 'terms-conditions/index.html',
+      minify: {
+        collapseWhitespace: true,
+        html5: true,
+        minifyCSS: true,
+        removeComments: true
+      }
+    }),
     new FaviconsWebpackPlugin({
       logo: path.resolve(__dirname, 'src/assets/images/icon.png'),
       prefix: 'assets/icons/favicons-[hash]/',
