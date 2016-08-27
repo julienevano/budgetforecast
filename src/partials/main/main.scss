@@ -23,6 +23,13 @@ main {
         min-height: 300px;
       }
 
+      @media (max-width: $layout-screen-size-large-phone) {
+        &.section__card-image--landscape {
+          min-width: 320px;
+          min-height: 200px;
+        }
+      }
+
       &.section__card-image--right {
         float: right;
       }

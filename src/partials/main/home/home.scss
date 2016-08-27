@@ -37,7 +37,7 @@ section.section.section--home {
     margin-top: -100px;
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: $layout-screen-size-large-phone) {
     div.logo {
       margin-top: -150px;
     }
