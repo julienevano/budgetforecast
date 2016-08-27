@@ -18,7 +18,8 @@
     "build:prod": "NODE_ENV=production webpack --config webpack.config.js",
     "start": "npm run serve",
     "serve": "npm run webpack-dev-server -- --open --inline --content-base www/",
-    "deploy": "gh-pages -d www"
+    "deploy": "gh-pages -d www",
+    "deploy:travis": "gh-pages --repo https://$GH_TOKEN@github.com/julienevano/budgetforecast.git -d www"
   },
   "dependencies": {
     "material-design-lite": "^1.1.3"
