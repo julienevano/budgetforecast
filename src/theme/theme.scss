@@ -1,3 +1,27 @@
+/* Material Design Lite */
+
+// Mixins
+@import "../../node_modules/material-design-lite/src/mixins";
+
+// Resets and dependencies
+@import "../../node_modules/material-design-lite/src/resets/resets";
+@import "../../node_modules/material-design-lite/src/typography/typography";
+
+// Components
+@import "../../node_modules/material-design-lite/src/palette/palette";
+@import "../../node_modules/material-design-lite/src/ripple/ripple";
+@import "../../node_modules/material-design-lite/src/animation/animation";
+@import "../../node_modules/material-design-lite/src/button/button";
+@import "../../node_modules/material-design-lite/src/card/card";
+@import "../../node_modules/material-design-lite/src/footer/mega_footer";
+@import "../../node_modules/material-design-lite/src/footer/mini_footer";
+@import "../../node_modules/material-design-lite/src/icon-toggle/icon-toggle";
+@import "../../node_modules/material-design-lite/src/menu/menu";
+@import "../../node_modules/material-design-lite/src/layout/layout";
+@import "../../node_modules/material-design-lite/src/grid/grid";
+
+/* Budget Forecast */
+
 .mdl-button.mdl-button--colored,
 .mdl-button.mdl-button--colored:hover {
   background-color: $color-light;

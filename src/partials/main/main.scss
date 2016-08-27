@@ -1,9 +1,9 @@
 main {
+  margin-top: -1px;
+
   section.section {
-    padding: 54px;
-    color: $color-text;
-    min-height: 340px;
-    max-height: 510px;
+    clear: both;
+    color: $color-secondary;
     overflow: hidden;
 
     &.section--grey {
@@ -11,7 +11,7 @@ main {
     }
 
     .section__card-image.mdl-card {
-      background-color: $color-white;
+      background-color: $color-extra-light;
 
       &.section__card-image--portrait {
         min-width: 320px;
@@ -26,6 +26,14 @@ main {
       &.section__card-image--right {
         float: right;
       }
+    }
+  }
+
+  @media (min-width: $layout-screen-size-threshold) {
+    section.section {
+      padding: 54px;
+      min-height: 340px;
+      max-height: 510;
     }
   }
 }

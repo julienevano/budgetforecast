@@ -9,7 +9,27 @@ header.header {
   .mdl-layout-title {
     a {
       text-decoration: none;
-      color: $color-white;
+      color: $color-extra-light;
     }
+  }
+
+  @media (min-width: $layout-screen-size-threshold) {
+    &.mdl-layout__header > .mdl-layout-icon {
+      display: block !important;
+    }
+  }
+}
+.mdl-layout__drawer-button {
+  line-height: 48px;
+}
+@media (min-width: $layout-screen-size-threshold+1) {
+  .mdl-layout__drawer-button {
+    display: none;
+  }
+}
+.mdl-layout__drawer {
+  .mdl-layout-title {
+    text-transform: uppercase;
+    background: $color-primary url('./assets/images/icon.png') center / contain no-repeat;
   }
 }

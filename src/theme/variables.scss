@@ -1,12 +1,13 @@
+// @import "../../node_modules/material-design-lite/src/variables";
+
+/* Material Design Lite */
+$layout-screen-size-threshold: 768px !default;
+
+/* Budget Forecast */
+
 // Colors
 $color-primary:    #79C273;
 $color-secondary:  #676767;
-$color-danger:     #f53d3d;
 $color-light:      #f4f4f4;
 $color-dark:       #222;
-$color-white:      #ffffff;
-$color-favorite:   #69BB7B;
-$color-text:       #676767;
-
-// Media
-$mobile-max-width: 900px;
+$color-extra-light:#fff;

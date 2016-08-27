@@ -14,7 +14,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "npm cache clean && npm run rimraf -- node_modules www",
     "clean:build": "npm run rimraf -- www",
-    "build": "webpack --config webpack.config.js",
+    "build:dev": "webpack --config webpack.config.js",
+    "build:prod": "NODE_ENV=production webpack --config webpack.config.js",
     "start": "npm run serve",
     "serve": "npm run webpack-dev-server -- --open --inline --content-base www/",
     "deploy": "gh-pages -d www"

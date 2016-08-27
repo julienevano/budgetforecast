@@ -1,6 +1,7 @@
 section.section.section--home {
+  max-height: 510px;
   padding-bottom: 0;
-  color: $color-text;
+  color: $color-secondary;
   background-color: $color-primary;
 
   h1 {
@@ -11,7 +12,7 @@ section.section.section--home {
     font-size: 48px;
   }
 
-  @media (max-width: $mobile-max-width) {
+  @media (max-width: $layout-screen-size-threshold) {
     h1 {
       font-size: 36px;
     }
@@ -23,7 +24,7 @@ section.section.section--home {
     margin: auto;
   }
 
-  @media (max-width: $mobile-max-width) {
+  @media (max-width: $layout-screen-size-threshold) {
     p.headline {
       font-size: 16px;
     }
@@ -34,6 +35,12 @@ section.section.section--home {
     height: 500px;
     width: 100%;
     margin-top: -100px;
+  }
+
+  @media (max-width: 320px) {
+    div.logo {
+      margin-top: -150px;
+    }
   }
 
   a.mdl-button {
@@ -51,5 +58,11 @@ a.home__fab.mdl-button {
 
   &:hover {
     background-color: $color-light;
+  }
+}
+
+@media (max-width: $layout-screen-size-threshold) {
+  section.section.section--home {
+    padding-top: 54px;
   }
 }
