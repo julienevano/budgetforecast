@@ -6,7 +6,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 var ENV = process.env.NODE_ENV;
-var BASE_URL = ENV === 'production' ? '/budgetforecast' : '';
+var BASE_URL = ENV === 'production' ? '/budgetforecast/' : '';
 
 module.exports = {
   entry: {
