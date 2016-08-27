@@ -1,0 +1,4 @@
+.mdl-layout__content {
+  // Fix when opening menu on iOS
+  overflow-y: hidden;
+}

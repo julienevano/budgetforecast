@@ -19,7 +19,7 @@
     "start": "npm run serve",
     "serve": "npm run webpack-dev-server -- --open --inline --content-base www/",
     "deploy": "gh-pages -d www",
-    "deploy:travis": "gh-pages --repo https://$GH_TOKEN@github.com/julienevano/budgetforecast.git -d www"
+    "deploy:travis": "git config --global user.name \"Travis CI\" && git config --global user.email \"travis@travis-ci.org\" && gh-pages --repo https://$GH_TOKEN@github.com/julienevano/budgetforecast.git -d www --silent"
   },
   "dependencies": {
     "material-design-lite": "^1.1.3"
